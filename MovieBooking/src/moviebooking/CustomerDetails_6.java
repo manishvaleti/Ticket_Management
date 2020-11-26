@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class CustomerDetails_6 extends javax.swing.JFrame {
     String name;
+    double cost=0;
     /**
      * Creates new form CustomerDetails_6
      */
@@ -22,6 +23,9 @@ public class CustomerDetails_6 extends javax.swing.JFrame {
         name=JOptionPane.showInputDialog("Enter Name");
         jLabel1.setText(name);
         jLabel5.setText(""+s);
+        cost+=count*150;
+        cost=cost+cost*0.12;
+        jLabel7.setText(Double.toString(cost));
     }
 
     /**
@@ -46,12 +50,15 @@ public class CustomerDetails_6 extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(680, 610));
         getContentPane().setLayout(null);
 
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Name");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(10, 140, 240, 40);
+
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(250, 130, 410, 50);
+        jLabel1.setBounds(260, 130, 400, 50);
 
         jLabel3.setBackground(new java.awt.Color(0, 255, 255));
         jLabel3.setFont(new java.awt.Font("Sitka Subheading", 1, 24)); // NOI18N
@@ -62,20 +69,27 @@ public class CustomerDetails_6 extends javax.swing.JFrame {
         getContentPane().add(jLabel3);
         jLabel3.setBounds(1, 6, 680, 50);
 
+        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Seats Selected:");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(80, 260, 100, 16);
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(260, 240, 370, 50);
+        jLabel4.setBounds(30, 260, 210, 34);
 
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(260, 260, 360, 50);
+
+        jLabel6.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Price:");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(81, 366, 90, 30);
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(280, 356, 330, 50);
+        jLabel6.setBounds(81, 366, 110, 40);
 
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(270, 360, 340, 50);
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton1.setText("EXIT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

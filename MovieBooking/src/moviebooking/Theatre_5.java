@@ -156,6 +156,11 @@ public class Theatre_5 extends javax.swing.JFrame {
         C8.setText("C8");
 
         C1.setText("C1");
+        C1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                C1ActionPerformed(evt);
+            }
+        });
 
         C2.setText("C2");
 
@@ -174,8 +179,18 @@ public class Theatre_5 extends javax.swing.JFrame {
         C6.setText("C6");
 
         D7.setText("D7");
+        D7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                D7ActionPerformed(evt);
+            }
+        });
 
         D8.setText("D8");
+        D8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                D8ActionPerformed(evt);
+            }
+        });
 
         D1.setText("D1");
         D1.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -190,10 +205,25 @@ public class Theatre_5 extends javax.swing.JFrame {
         });
 
         D2.setText("D2");
+        D2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                D2ActionPerformed(evt);
+            }
+        });
 
         D3.setText("D3");
+        D3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                D3ActionPerformed(evt);
+            }
+        });
 
         D4.setText("D4");
+        D4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                D4ActionPerformed(evt);
+            }
+        });
 
         D5.setText("D5");
         D5.setToolTipText("");
@@ -204,6 +234,11 @@ public class Theatre_5 extends javax.swing.JFrame {
         });
 
         D6.setText("D6");
+        D6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                D6ActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("NEXT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -366,7 +401,9 @@ public class Theatre_5 extends javax.swing.JFrame {
     }//GEN-LAST:event_C5ActionPerformed
 
     private void D5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D5ActionPerformed
-        // TODO add your handling code here:
+        ++count;
+        s.add(D5.getText());        
+// TODO add your handling code here:
     }//GEN-LAST:event_D5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -384,6 +421,48 @@ public class Theatre_5 extends javax.swing.JFrame {
 
        
     }//GEN-LAST:event_D1StateChanged
+
+    private void D2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D2ActionPerformed
+        ++count;
+        s.add(D2.getText());
+        // TODO add your handling code here:
+    }//GEN-LAST:event_D2ActionPerformed
+
+    private void D3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D3ActionPerformed
+      ++count;
+        s.add(D3.getText());
+        // TODO add your handling code here:
+    }//GEN-LAST:event_D3ActionPerformed
+
+    private void D4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D4ActionPerformed
+        ++count;
+        s.add(D4.getText());
+               // TODO add your handling code here:
+    }//GEN-LAST:event_D4ActionPerformed
+
+    private void D6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D6ActionPerformed
+        // TODO add your handling code here:
+        ++count;
+        s.add(D6.getText());
+    }//GEN-LAST:event_D6ActionPerformed
+
+    private void D7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D7ActionPerformed
+        // TODO add your handling code here:
+        ++count;
+        s.add(D7.getText());
+    }//GEN-LAST:event_D7ActionPerformed
+
+    private void D8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_D8ActionPerformed
+        // TODO add your handling code here:
+        ++count;
+        s.add(D8.getText());
+    }//GEN-LAST:event_D8ActionPerformed
+
+    private void C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_C1ActionPerformed
+        // TODO add your handling code here:
+        ++count;
+        s.add(C1.getText());
+    }//GEN-LAST:event_C1ActionPerformed
 
     /**
      * @param args the command line arguments
