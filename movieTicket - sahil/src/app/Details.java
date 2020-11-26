@@ -174,8 +174,15 @@ public class Details extends javax.swing.JFrame {
 
     private void proceedMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_proceedMousePressed
         fullName = firstName.getText() + " " + lastName.getText();
-        new summary(movName, timing, seats, fullName).setVisible(true);
-        this.dispose();
+        if(fullName.trim().isEmpty()){
+            JOptionPane.showMessageDialog(Details.this, "Name can't be empty");
+            return;
+        }
+        else{
+            new summary(movName, timing, seats, fullName).setVisible(true);
+            this.dispose();
+        }
+        
     }//GEN-LAST:event_proceedMousePressed
 
     /**

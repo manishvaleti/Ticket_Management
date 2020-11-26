@@ -49,9 +49,9 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="250" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="-2" pref="313" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
@@ -63,10 +63,7 @@
                           </Group>
                           <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="-2" pref="250" max="-2" attributes="0"/>
-                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jLabel3" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="263" max="32767" attributes="0"/>
               </Group>
@@ -123,6 +120,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtUsername">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="user1"/>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtUsernameActionPerformed"/>
           </Events>
@@ -135,6 +135,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JPasswordField" name="pwdPassword">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="1234"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
