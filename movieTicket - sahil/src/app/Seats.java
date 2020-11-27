@@ -1107,8 +1107,15 @@ public class Seats extends javax.swing.JFrame {
     }//GEN-LAST:event_backMousePressed
 
     private void proceedMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_proceedMousePressed
-        new Details(movName, timing, seats).setVisible(true);
-        this.dispose();
+        if(seats.size()<=0){
+            JOptionPane.showMessageDialog(Seats.this, "Please select your seat!");
+            return;
+        }
+        else{
+            new Details(movName, timing, seats).setVisible(true);
+            this.dispose();
+        }
+        
     }//GEN-LAST:event_proceedMousePressed
     
     /**
